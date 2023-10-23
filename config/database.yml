@@ -1,0 +1,20 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: developer
+  password: supersecretpassword
+  host: localhost
+
+development:
+  <<: *default
+  database: rails_one_app_dev
+
+test:
+  <<: *default
+  database: rails_one_app_test
+
+production:
+  <<: *default
+  database: rails_one_app_prod
