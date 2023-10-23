@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- .App {
+.App {
   text-align: center;
   min-height: 100vh;
   display: grid;
